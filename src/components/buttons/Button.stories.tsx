@@ -1,15 +1,18 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Button } from './Button';
+import { Button } from "./Button";
+import { IconType } from "../icons";
+import { Helper } from "../../utils";
+import { ColourConfigurations } from "../../constants/colourConfigurations";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: "Component/Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -20,22 +23,30 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: "Button",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+export const Circle = Template.bind({});
+Circle.args = {
+  primary: false,
+  shape: "circle",
+  icon: IconType.right,
+  iconColour: Helper.getConstantColour(ColourConfigurations.primary),
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
+export const Square = Template.bind({});
+Square.args = {
+  primary: false,
+  shape: "square",
+  icon: IconType.search,
+  iconColour: Helper.getConstantColour(ColourConfigurations.text),
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Rectangle = Template.bind({});
+Rectangle.args = {
+  primary: false,
+  shape: "rectangle",
+  iconSize: 48,
+  icon: IconType.doubleUp,
+  iconColour: Helper.getConstantColour(ColourConfigurations.white),
 };

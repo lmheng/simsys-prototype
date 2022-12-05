@@ -1,0 +1,10 @@
+export { ReactComponent as Search } from "./awesome-search.svg";
+export { ReactComponent as Youtube } from "./awesome-youtube.svg";
+export { ReactComponent as Facebook } from "./ionic-logo-facebook.svg";
+export { ReactComponent as Menu } from "./ionic-md-menu.svg";
+export { ReactComponent as DoubleUp } from "./angle-double-up.svg";
+export { ReactComponent as Right } from "./arrow-next-right-icon.svg";
+export { ReactComponent as Left } from "./arrow-previous-left-icon.svg";
+export { ReactComponent as Up } from "./arrow-up-icon.svg";
+export { ReactComponent as Minus } from "./math-minus-icon.svg";
+export { ReactComponent as Plus } from "./math-plus-icon.svg";

@@ -1,0 +1,12 @@
+@import url("../../styles/constants.css");
+
+.image-primary {
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
+.clickable {
+  display: inline-block;
+  cursor: pointer;
+}

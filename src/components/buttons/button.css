@@ -1,30 +1,29 @@
+@import url("../../styles/constants.css");
+
 .storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  border: 0;
 }
 .storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+  border-radius: 8px;
+  padding: 5px 20px 5px 20px;
+  color: var(--text);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+.circle {
+  border-radius: 50%;
+  padding: 20px;
+  background-color: var(--white);
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.square {
+  padding: 10px 5px 0px 10px;
+  background-color: var(--white);
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.rectangle {
+  padding: 25px 10px 25px 10px;
+  background-color: var(--primary);
 }

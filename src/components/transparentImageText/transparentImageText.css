@@ -1,0 +1,28 @@
+@import url("../../styles/constants.css");
+
+.image-container {
+  position: relative;
+  max-width: 250px; /* Maximum width */
+  max-height: 250px; /* Maximum height */
+}
+
+.image-container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: var(--primary); /* Fallback color */
+  opacity: 0.75;
+  width: 100%; /* Full width */
+  padding: 5px; /* Some padding */
+}
+
+.image-container .content > h4,
+p,
+a {
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.content:has(div):has(.show) {
+  height: 100%;
+}

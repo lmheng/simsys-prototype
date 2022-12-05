@@ -1,38 +1,31 @@
 @font-face {
-  font-family: "CalibriLight";
-  src: local("CalibriLight"),
-    url("../../assets/fonts/Calibri-Light.ttf") format("truetype");
+  font-family: "LatoRegular";
+  src: local("LatoRegular"),
+    url("../assets/fonts/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "CalibriBold";
-  src: local("CalibriBold"),
-    url("../../assets/fonts/Calibri-Bold.ttf") format("truetype");
+  font-family: "LatoSemiBold";
+  src: local("LatoSemiBold"),
+    url("../assets/fonts/Lato-SemiBold.ttf") format("truetype");
 }
 
 :root {
-  --primary: #4aae3f;
-  --secondary: #95d465;
-  --color_3: #6dd477;
-  --color_4: #6dd4b1;
-  --font_primary: #393939;
-  --font_secondary: #acacac;
-  --font_button: #ffffff;
-  --background: #ffffff;
-  --background_secondary: #f0f0f0;
-  --warning: #e13c3c;
-  --cancel: #acacac;
+  --primary: #0857a1;
+  --secondary: #6ad7fe;
+  --selected_menu_item: #6e98bf;
+  --light_grey: #f9f9f9;
+  --grey: #e6e6e6;
+  --dark_grey: #707070;
+  --text: #3e3e3e;
   --white: #ffffff;
 
-  --font_family_primary: "CalibriLight";
-  --font_family_input: "CalibriBold";
-  --font_family_form: "CalibriBold";
-  --font_family_button: "CalibriLight";
-  --font_family_headline: "CalibriBold";
-  --font_family_navbar: "CalibriBold";
-  --font_family_tab: "CalibriBold";
+  --rose: #f8838e;
+  --yellow: #eab32b;
+  --peach: #d8a8a5;
+  --cyan: #41bcd8;
+  --lilac: #c9b6e8;
 
-  --font_header_size: 34px;
-  --font_primary_size: 21px;
-  --font_subtext_size: 16px;
+  --font_family_primary: "LatoRegular";
+  --font_family_bold: "LatoSemiBold";
 }

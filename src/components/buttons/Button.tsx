@@ -1,23 +1,41 @@
-import React from 'react';
-import './button.css';
+import React from "react";
+import "../../styles/main.css";
+import { Icon, IconType } from "../icons";
+import "./button.css";
 
 interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * Is this the principal call to action on the page? (overrides icon button settings)
    */
   primary?: boolean;
+  /**
+   * If not primary, what shape does this button take?
+   */
+  shape?: "circle" | "square" | "rectangle";
+  /**
+   * If icon button, what icon is it showing?
+   */
+  icon?: IconType;
+  /**
+   * If icon button, what colour is its icon?
+   */
+  iconColour?: string;
+  /**
+   * If icon button, what size is its icon?
+   */
+  iconSize?: number;
   /**
    * What background color to use
    */
   backgroundColor?: string;
   /**
-   * How large should the button be?
+   * Button contents for non-icon buttons
    */
-  size?: 'small' | 'medium' | 'large';
+  label?: string;
   /**
-   * Button contents
+   * Optional class name
    */
-  label: string;
+  className?: string;
   /**
    * Optional click handler
    */
@@ -28,21 +46,31 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
-  size = 'medium',
+  primary = true,
+  shape,
+  icon,
+  iconColour,
+  iconSize = 24,
   backgroundColor,
   label,
+  className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? "storybook-button--primary" : "";
+  const content = primary ? (
+    label
+  ) : (
+    <Icon type={icon!} colour={iconColour} size={iconSize} />
+  );
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={["storybook-button", shape, mode, className].join(" ")}
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {content}
     </button>
   );
 };

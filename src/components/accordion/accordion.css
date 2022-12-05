@@ -1,0 +1,32 @@
+@import url("../../styles/constants.css");
+
+.accordion {
+  --bs-accordion-bg: rgba(0, 0, 0, 0);
+}
+
+.accordion-button::after {
+  background-image: url("../../assets/svgs/math-plus-icon.svg");
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/svgs/math-minus-icon.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.accordion-button {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+.accordion-body {
+  margin-top: 15px;
+  background-color: var(--white);
+}
+
+.accordion-item {
+  margin: 15px 0px 15px 0px;
+}

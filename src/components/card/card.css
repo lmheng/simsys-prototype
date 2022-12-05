@@ -1,0 +1,46 @@
+@import url("../../styles/constants.css");
+
+.card {
+  width: 200px;
+  transition: transform 1s;
+}
+
+.card-title {
+  color: var(--text);
+}
+.card-body {
+  border-radius: 0px 0px 0.375rem 0.375rem;
+  padding-bottom: 50px;
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.primary > .card-title {
+  color: var(--white);
+}
+
+.rose {
+  background-color: var(--rose);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.peach {
+  background-color: var(--peach);
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
+
+.lilac {
+  background-color: var(--lilac);
+}
+
+.card:has(div):has(.primary):hover {
+  transform: translate(0px, -50px);
+}

@@ -1,0 +1,63 @@
+@import url("../../styles/constants.css");
+
+.background {
+  background-color: var(--secondary);
+  padding: 0px 10px 5px 10px;
+  min-height: 40px;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 5;
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--white) !important;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  background-color: var(--primary);
+  color: var(--white) !important;
+}
+
+.dropdown-item {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  padding: 15px 15px 15px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--selected_menu_item) !important;
+}
+
+.sidebar {
+  width: 0px;
+  min-height: 100vh;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 60px 0px 15px 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: var(--white);
+}
+
+.sidebar-active {
+  width: 250px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+.sidebar > .list-unstyled > .nav-item > .nav-link {
+  padding: 15px;
+}
