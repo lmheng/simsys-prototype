@@ -4,25 +4,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Proposed structure
 src<br/>
+├──assets<br/>
 ├──components<br/>
 ├──constants<br/>
-├──layouts<br/>
-├──pages<br/>
-├──services<br/>
+├──stories<br/>
 ├──styles<br/>
-├──translations<br/>
 ├──types<br/>
 └──utils<br/>
-assets<br/>
+App.tsx<br/>
 
 ## Details of structure
 | Folder name  | What is it used for |
 | ------------- | ------------- |
 | components  | Contains reusable components that are most often used to compose Feature or Page components |
 | constants  | Contains reusable & immutable strings like URLs or Regex Patterns |
-| layouts  | Contains reusable Layout Components. A Layout Component is a component that composes the layout of a page |
-| pages  | Contains Page Components. Each Page Component is associated with a route |
-| services  | Contains reusable code for interacting with an API, often in the form of hooks, and ideally utilizing a server-cache tool like React Query or RTK Query |
+| stories  | A sample folder for storybookjs |
 | styles  | Reusable or global styles (CSS) |
 | types  | Reusable types for projects utilizing TypeScript or Flow |
 | utils  | Reusable utility functions |
@@ -39,30 +35,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm i`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you have node installed on your computer, this command will automatically download the node_modules for this project.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To download node, you can refer to [https://nodejs.org/en/](https://nodejs.org/en/) .
 
 ## Learn More
 

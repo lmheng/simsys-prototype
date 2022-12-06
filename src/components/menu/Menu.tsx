@@ -129,7 +129,7 @@ export const Menu = ({
     <div className="container-fluid">
       {mobile && (
         <div className="row align-items-center justify-content-between background-mobile">
-          <div className="col-1">
+          <div className="col-2 d-flex justify-content-center">
             <Button
               primary={false}
               shape="square"
@@ -138,7 +138,7 @@ export const Menu = ({
               onClick={() => setMobileNav((mobile) => !mobile)}
             />
           </div>
-          <div className="col-10 d-flex justify-content-center">
+          <div className="col-8 d-flex justify-content-center">
             <Image
               src={SIMSYS}
               clickable={true}
@@ -146,7 +146,7 @@ export const Menu = ({
               className="w-50"
             />
           </div>
-          <div className="col-1">
+          <div className="col-2 d-flex justify-content-center">
             <Button
               primary={false}
               shape="square"
