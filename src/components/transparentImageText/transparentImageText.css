@@ -4,6 +4,8 @@
   position: relative;
   max-width: 250px; /* Maximum width */
   max-height: 250px; /* Maximum height */
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 
 .image-container .content {

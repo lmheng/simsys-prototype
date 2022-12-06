@@ -18,7 +18,7 @@ interface CardProps {
   /**
    * key param for child element
    */
-  key: number;
+  index: number;
   /**
    * Optional click handler
    */
@@ -29,20 +29,20 @@ export const TransparentImageText = ({
   img,
   title,
   text,
-  key,
+  index,
   ...props
 }: CardProps) => {
   return (
     <div className="image-container">
       <Image src={img} className="w-100" />
       <div className="content">
-        <p>
+        <div className="row d-flex justify-content-center">
           <a
             data-bs-toggle="collapse"
-            href={`#collapseCard-${key}`}
+            href={`#collapseCard-${index}`}
             role="button"
             aria-expanded="false"
-            aria-controls={`collapseCard-${key}`}
+            aria-controls={`collapseCard-${index}`}
           >
             <Icon
               type={IconType.up}
@@ -50,9 +50,9 @@ export const TransparentImageText = ({
               size={12}
             />
           </a>
-        </p>
+        </div>
         <h4>{title}</h4>
-        <div className="collapse" id={`collapseCard-${key}`}>
+        <div className="collapse" id={`collapseCard-${index}`}>
           <p>{text}</p>
         </div>
       </div>

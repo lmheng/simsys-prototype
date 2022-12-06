@@ -18,10 +18,10 @@ interface AccordionProps {
 
 export const Accordion = ({ elements = [], id, ...props }: AccordionProps) => {
   return (
-    <div className="accordion accordion-flush" id={id}>
+    <div className="accordion-flush accordion" id={id}>
       {elements.map((element, index) => (
         <div className="accordion-item" key={index}>
-          <h2 className="accordion-header" id={`flush-heading${index}`}>
+          <h4 className="accordion-header" id={`flush-heading${index}`}>
             <button
               className="accordion-button"
               type="button"
@@ -32,7 +32,7 @@ export const Accordion = ({ elements = [], id, ...props }: AccordionProps) => {
             >
               {element.title}
             </button>
-          </h2>
+          </h4>
           <div
             id={`flush-collapse${index}`}
             className={`accordion-collapse collapse`}

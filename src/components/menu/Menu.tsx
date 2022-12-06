@@ -128,7 +128,7 @@ export const Menu = ({
   return (
     <div className="container-fluid">
       {mobile && (
-        <div className="row align-items-center justify-content-between">
+        <div className="row align-items-center justify-content-between background-mobile">
           <div className="col-1">
             <Button
               primary={false}
@@ -143,6 +143,7 @@ export const Menu = ({
               src={SIMSYS}
               clickable={true}
               onClick={() => (window.location.href = "#")}
+              className="w-50"
             />
           </div>
           <div className="col-1">

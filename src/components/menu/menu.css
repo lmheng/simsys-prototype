@@ -6,6 +6,10 @@
   min-height: 40px;
 }
 
+.background-mobile {
+  background-color: var(--white);
+}
+
 .absolute {
   position: absolute;
   z-index: 5;
@@ -60,4 +64,11 @@
 
 .sidebar > .list-unstyled > .nav-item > .nav-link {
   padding: 15px;
+}
+
+.col-1,
+.col-2,
+.col-9 {
+  padding-right: 0px;
+  padding-left: 0px;
 }

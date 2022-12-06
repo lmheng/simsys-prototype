@@ -2,6 +2,7 @@
 
 .accordion {
   --bs-accordion-bg: rgba(0, 0, 0, 0);
+  --bs-accordion-border-color: rgba(0, 0, 0, 0);
 }
 
 .accordion-button::after {
@@ -25,6 +26,7 @@
 .accordion-body {
   margin-top: 15px;
   background-color: var(--white);
+  text-align: left;
 }
 
 .accordion-item {

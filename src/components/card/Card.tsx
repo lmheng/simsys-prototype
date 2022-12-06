@@ -1,7 +1,7 @@
 import { Image } from "../images";
 import "./card.css";
 
-interface CardProps {
+export interface CardProps {
   /**
    * Image path
    */
@@ -17,12 +17,22 @@ interface CardProps {
   /**
    * Optional click handler
    */
+  className?: string;
+  /**
+   * Optional click handler
+   */
   onClick?: () => void;
 }
 
-export const Card = ({ img, title, colour, ...props }: CardProps) => {
+export const Card = ({
+  img,
+  title,
+  colour,
+  className,
+  ...props
+}: CardProps) => {
   return (
-    <div className="card">
+    <div className={["card", className].join(" ")}>
       <Image src={img} className="card-img-top" />
       <div className={`card-body ${colour}`}>
         <h4 className="card-title">{title}</h4>
