@@ -23,7 +23,7 @@ export const Accordion = ({ elements = [], id, ...props }: AccordionProps) => {
         <div className="accordion-item" key={index}>
           <h4 className="accordion-header" id={`flush-heading${index}`}>
             <button
-              className="accordion-button"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#flush-collapse${index}`}
