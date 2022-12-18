@@ -7,12 +7,11 @@ src<br/>
 ├──assets<br/>
 ├──components<br/>
 ├──constants<br/>
-├──pages<br/>
-├──services<br/>
 ├──stories<br/>
 ├──styles<br/>
+├──types<br/>
 └──utils<br/>
-App.js<br/>
+App.tsx<br/>
 
 ## Details of structure
 | Folder name  | What is it used for |
@@ -20,10 +19,9 @@ App.js<br/>
 | assets  | Contains all asset files |
 | components  | Contains reusable components that are most often used to compose Feature or Page components |
 | constants  | Contains reusable & immutable strings like URLs, Regex Patterns or just constant values |
-| pages  | Contains all routing pages for a React project |
-| services  | Contains all api service methods |
 | stories  | A sample folder for storybookjs |
 | styles  | Reusable or global styles (CSS) |
+| types  | Reusable types for projects utilizing TypeScript or Flow |
 | utils  | Reusable utility functions |
 
 ## Available Scripts
